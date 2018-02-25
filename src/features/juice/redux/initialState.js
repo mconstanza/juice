@@ -6,15 +6,44 @@
 
 // NOTE: initialState constant is necessary so that Rekit could auto add initial state when creating async actions.
 const initialState = {
-  apples: 0,
-  carrots: 0,
-  ginger: 0,
-  pears: 0,
-  sweetPotatoes: 0,
-  kaleLeaves: 0,
-  cucumbers: 0,
-  lemons: 0,
-  celerySticks: 0
+  ingredients:{
+    apples: {
+      name: "Apples",
+      quantity: 0
+    },
+    carrots: {
+      name: "Carrots",
+      quantity: 0
+    },
+    ginger: {
+      name: "Ginger",
+      quantity: 0
+    },
+    pears: {
+      name: "Pears",
+      quantity: 0
+    },
+    sweetPotatoes: {
+      name: "Sweet Potatoes",
+      quantity: 0
+    },
+    kaleLeaves: {
+      name: "Kale Leaves",
+      quantity: 0
+    },
+    cucumbers: {
+      name: "Cucumbers",
+      quantity: 0
+    },
+    lemons: {
+      name: "Lemons",
+      quantity: 0
+    },
+    celerySticks: {
+      name: "Celery Sticks",
+      quantity: 0
+    }
+  }
 };
 
 export default initialState;

@@ -22,47 +22,101 @@ export function reducer(state, action) {
         case "Apples":
           return {
           ...state,
-          apples: state.apples + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            apples:{
+              ...state.ingredients.apples,
+              quantity: state.ingredients.apples.quantity + action.quantity,
+            }
+          }
         }
         case "Carrots":
           return {
           ...state,
-          carrots: state.carrots + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            carrots:{
+              ...state.ingredients.carrots,
+              quantity: state.ingredients.carrots.quantity + action.quantity,
+            }
+          }
         }
         case "Ginger":
           return {
           ...state,
-          ginger: state.ginger + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            ginger:{
+              ...state.ingredients.ginger,
+              quantity: state.ingredients.ginger.quantity + action.quantity,
+            }
+          }
         }
         case "Pears":
           return {
           ...state,
-          pears: state.pears + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            pears:{
+              ...state.ingredients.pears,
+              quantity: state.ingredients.pears.quantity + action.quantity,
+            }
+          }
         }
         case "Sweet Potatoes":
           return {
           ...state,
-          sweetPotatoes: state.sweetPotatoes + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            sweetPotatoes:{
+              ...state.ingredients.sweetPotatoes,
+              quantity: state.ingredients.sweetPotatoes.quantity + action.quantity,
+            }
+          }
         }
         case "Kale Leaves":
           return {
           ...state,
-          kaleLeaves: state.kaleLeaves + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            kaleLeaves:{
+              ...state.ingredients.kaleLeaves,
+              quantity: state.ingredients.kaleLeaves.quantity + action.quantity,
+            }
+          }
         }
         case "Cucumbers":
           return {
           ...state,
-          cucumbers: state.cucumbers + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            cucumbers:{
+              ...state.ingredients.cucumbers,
+              quantity: state.ingredients.cucumbers.quantity + action.quantity,
+            }
+          }
         }
         case "Celery Sticks":
           return {
           ...state,
-          celerySticks: state.celerySticks + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            celerySticks:{
+              ...state.ingredients.celerySticks,
+              quantity: state.ingredients.celerySticks.quantity + action.quantity,
+            }
+          }
         }
         case "Lemons":
           return {
           ...state,
-          lemons: state.lemons + action.quantity,
+          ingredients: {
+            ...state.ingredients,
+            lemons:{
+              ...state.ingredients.lemons,
+              quantity: state.ingredients.lemons.quantity + action.quantity,
+            }
+          }
         }
         default:
           return state;

@@ -8,12 +8,22 @@ export class ShoppingList extends Component {
   static propTypes = {
     juice: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired,
+    shoppingList: PropTypes.array.isRequired
   };
 
   render() {
     return (
       <div className="juice-shopping-list">
         <h2>Shopping List</h2>
+        {
+          this.props.shoppingList.map((item) => {
+            if(item.quantity > 0) {
+              return (
+                <li>{item.name}: {item.quantity}</li>
+              )
+            }
+          })
+        }
       </div>
     );
   }
