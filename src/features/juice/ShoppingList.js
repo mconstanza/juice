@@ -15,6 +15,9 @@ export class ShoppingList extends Component {
     return (
       <div className="juice-shopping-list">
         <h2 className="shopping-list-header">Shopping List</h2>
+        <div className="reset-button-div">
+            <button className="reset-button" onClick={this.props.actions.resetIngredients}>Reset</button>
+        </div>
         {
           this.props.shoppingList.map((item) => {
             if(item.quantity > 0) {
@@ -24,7 +27,6 @@ export class ShoppingList extends Component {
             }
           })
         }
-        <button onClick={this.props.actions.resetIngredients}>Reset</button>
       </div>
     );
   }
