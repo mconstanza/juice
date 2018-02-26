@@ -24,7 +24,7 @@ export class ShoppingList extends Component {
             }
           })
         }
-        <button>Reset</button>
+        <button onClick={this.props.actions.resetIngredients}>Reset</button>
       </div>
     );
   }

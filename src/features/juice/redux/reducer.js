@@ -8,9 +8,11 @@
 
 import initialState from './initialState';
 import { reducer as addIngredientReducer } from './addIngredient';
+import { reducer as resetIngredientsReducer } from './resetIngredients';
 
 const reducers = [
   addIngredientReducer,
+  resetIngredientsReducer,
 ];
 
 export default function reducer(state = initialState, action) {
