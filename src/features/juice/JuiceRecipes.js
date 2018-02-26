@@ -23,10 +23,10 @@ export class JuiceRecipes extends Component {
   render() {
     return (
       <div className="juice-juice-recipes">
-        <div>
+        <div className="recipe-list">
           <JuiceList actions={this.props.actions} list={juices}/>
         </div>
-        <div>
+        <div className="shopping-list">
           <ShoppingList shoppingList={this.renderShoppingList()} actions={this.props.actions}/>
         </div>
       </div>

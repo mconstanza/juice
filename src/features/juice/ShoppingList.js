@@ -14,16 +14,17 @@ export class ShoppingList extends Component {
   render() {
     return (
       <div className="juice-shopping-list">
-        <h2>Shopping List</h2>
+        <h2 className="shopping-list-header">Shopping List</h2>
         {
           this.props.shoppingList.map((item) => {
             if(item.quantity > 0) {
               return (
-                <li>{item.name}: {item.quantity}</li>
+                <li className="shopping-list-item">{item.quantity} {item.name}</li>
               )
             }
           })
         }
+        <button>Reset</button>
       </div>
     );
   }
