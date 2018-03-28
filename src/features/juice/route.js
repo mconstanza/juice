@@ -6,9 +6,9 @@ import {
 } from './';
 
 export default {
-  path: 'juice',
+  path: '/',
   name: 'Juice',
   childRoutes: [
-    { path: 'juice-recipes', name: 'Juice recipes', component: JuiceRecipes, isIndex: true },
+    { path: '/', name: 'Juice recipes', component: JuiceRecipes, isIndex: true },
   ],
 };

@@ -42,6 +42,18 @@ const initialState = {
     celerySticks: {
       name: "Celery Sticks",
       quantity: 0
+    },
+    mint: {
+      name: "Mint",
+      quantity: 0
+    },
+    limes: {
+      name: "Limes",
+      quantity: 0
+    },
+    spinach: {
+      name: "Spinach",
+      quantity: 0
     }
   }
 };

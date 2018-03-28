@@ -118,6 +118,39 @@ export function reducer(state, action) {
             }
           }
         }
+        case "Mint":
+          return {
+          ...state,
+          ingredients: {
+            ...state.ingredients,
+            mint:{
+              ...state.ingredients.mint,
+              quantity: state.ingredients.mint.quantity + action.quantity,
+            }
+          }
+        }
+        case "Limes":
+          return {
+          ...state,
+          ingredients: {
+            ...state.ingredients,
+            limes:{
+              ...state.ingredients.limes,
+              quantity: state.ingredients.limes.quantity + action.quantity,
+            }
+          }
+        }
+        case "Spinach":
+          return {
+          ...state,
+          ingredients: {
+            ...state.ingredients,
+            spinach:{
+              ...state.ingredients.spinach,
+              quantity: state.ingredients.spinach.quantity + action.quantity,
+            }
+          }
+        }
         default:
           return state;
       }
